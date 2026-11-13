@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f2ec">
+  <meta name="description" content="Приглашение на нашу свадьбу. Будем рады разделить этот особенный день вместе с вами.">
+  <title>Свадебное приглашение — особенный день</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span>С ЛЮБОВЬЮ И РАДОСТЬЮ</span><span class="top-heart">♡</span><span>ПРИГЛАШАЕМ ВАС</span></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">НАШ ОСОБЕННЫЙ ДЕНЬ</p>
+        <h1>Два сердца.<br><em>Одна история.</em></h1>
+        <p class="intro">Мы будем счастливы разделить с вами один из самых важных и прекрасных дней нашей жизни.</p>
+        <a class="outline-btn" href="#details">ОТКРЫТЬ ПРИГЛАШЕНИЕ <span>↓</span></a>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="photo-frame"><img src="images/person1.jpg" alt="Фото первого участника приглашения"></div>
+        <div class="photo-frame second"><img src="images/person2.jpg" alt="Фото второго участника приглашения"></div>
+        <span class="floating-heart">♡</span>
+        <span class="photo-note">the beginning<br>of forever</span>
+      </div>
+      <div class="vertical-note">SAVE THE DATE · SAVE THE DATE ·</div>
+    </section>
+
+    <section class="names-section" id="details">
+      <p class="eyebrow">СОЕДИНЯЯ ДВЕ ИСТОРИИ</p>
+      <h2><span id="nameOne">ИМЯ</span> <b>&</b> <span id="nameTwo">ИМЯ</span></h2>
+      <p class="names-sub">приглашают вас на празднование своей свадьбы</p>
+      <div class="date-line"><span></span><p id="dateText">20 ИЮНЯ 2027</p><span></span></div>
+      <div class="countdown" aria-label="Обратный отсчёт">
+        <div><strong id="days">000</strong><small>ДНЕЙ</small></div>
+        <i>:</i><div><strong id="hours">00</strong><small>ЧАСОВ</small></div>
+        <i>:</i><div><strong id="minutes">00</strong><small>МИНУТ</small></div>
+        <i>:</i><div><strong id="seconds">00</strong><small>СЕКУНД</small></div>
+      </div>
+    </section>
+
+    <section class="message-section">
+      <div class="message-card">
+        <span class="quote-mark">“</span>
+        <p>В жизни есть моменты, которые хочется остановить. И есть люди, с которыми хочется разделить каждый из них.</p>
+        <small>БУДЕМ РАДЫ ВИДЕТЬ ВАС РЯДОМ</small>
+      </div>
+      <div class="flower">✳</div>
+    </section>
+
+    <section class="schedule">
+      <div class="section-heading"><p class="eyebrow">ПЛАН ТОРЖЕСТВА</p><h2>Этот день</h2><p>Мы подготовили несколько особенных мгновений</p></div>
+      <div class="timeline">
+        <article><span class="time">16:00</span><div class="timeline-dot"></div><div><h3>Встреча гостей</h3><p>Будем рады приветствовать вас и сделать первые фотографии.</p></div></article>
+        <article><span class="time">17:00</span><div class="timeline-dot"></div><div><h3>Церемония</h3><p>Самый трогательный момент нашего праздника.</p></div></article>
+        <article><span class="time">18:00</span><div class="timeline-dot"></div><div><h3>Ужин и праздник</h3><p>Тёплые слова, музыка, улыбки и прекрасный вечер.</p></div></article>
+      </div>
+    </section>
+
+    <section class="place">
+      <div class="place-info"><p class="eyebrow">ГДЕ МЫ ВСТРЕТИМСЯ</p><h2>Место<br><em>нашей встречи</em></h2>
+        <p class="place-name" id="venue">Название ресторана</p><p class="place-address" id="address">Город, улица и адрес</p>
+        <a class="outline-btn" id="mapLink" href="https://maps.google.com/" target="_blank" rel="noopener">ПОСМОТРЕТЬ НА КАРТЕ ↗</a>
+      </div>
+      <div class="place-art"><div class="arch"><span>♡</span><small>WELCOME<br>TO OUR DAY</small></div></div>
+    </section>
+
+    <section class="rsvp">
+      <p class="eyebrow">ПОЖАЛУЙСТА, ПОДТВЕРДИТЕ ПРИСУТСТВИЕ</p>
+      <h2>Вы будете с нами?</h2>
+      <p>Пожалуйста, дайте нам знать, сможете ли вы разделить этот день вместе с нами.</p>
+      <form id="rsvpForm">
+        <input id="guestName" type="text" placeholder="Ваше имя" required>
+        <select id="attendance" required><option value="" disabled selected>Ваш ответ</option><option value="С удовольствием буду!">С удовольствием буду!</option><option value="К сожалению, не смогу прийти">К сожалению, не смогу прийти</option></select>
+        <button type="submit">ОТПРАВИТЬ ОТВЕТ <span>↗</span></button>
+      </form>
+      <p class="form-note" id="formNote">После нажатия появится подтверждение на экране.</p>
+    </section>
+  </main>
+
+  <footer><span>С ЛЮБОВЬЮ</span><b>♡</b><span>БУДЕМ ЖДАТЬ ВАС</span><p>Сделано с теплом для особенного дня</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
